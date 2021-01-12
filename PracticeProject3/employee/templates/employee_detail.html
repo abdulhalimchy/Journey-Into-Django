@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block tilte %}
+    Empolyee Detail
+{% endblock tilte %}
+
+{% block body %}
+    <div class="container">
+        <h3>{{ employee.first_name }} {{ employee.last_name }}</h3>
+        <p>Email: {{ employee.email }}</p>
+        <p>Gender: {{ employee.gender }}</p>
+        <p>Phone: {{ employee.phone_num }}</p>
+        <p>Job: {{ employee.job }}</p>
+        <p>Date Of Birth: {{ employee.date_of_birth }}</p>
+        <p>Address: {{ employee.address }}</p>
+    </div>
+{% endblock body %}
