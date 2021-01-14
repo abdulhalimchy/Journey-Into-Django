@@ -1,0 +1,17 @@
+{% extends 'employee_register/base.html' %}
+
+{% block title %}
+    Form
+{% endblock title %}
+
+{% block content %}
+
+<form action="" method="POST">
+    
+    {% csrf_token %}
+    
+    {{ form }}
+
+</form>
+
+{% endblock content %}
